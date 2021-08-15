@@ -5,7 +5,12 @@ create_venv:
 	echo "run: source ./venv/bin/active to active this virtual environment"
 
 install_requirements:
-	python3 -m pip install -r requirements.txt
+	@if [[ -n "${VIRTUAL_ENV}" ]] ; then\
+		python3 -m pip install -r requirements.txt;\
+	else\
+		echo "virtual env not active: use 'source ./venv/bin/activate'";\
+	fi\
+
 
 
 
