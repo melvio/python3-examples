@@ -1,0 +1,17 @@
+{
+  "_created-at": "2021-08-15T17:30:04",
+  "username": "melvio",
+  "age": 28,
+  "hobbies": [
+    "reading",
+    "exercise"
+  ],
+  "powerlifting-prs": {
+    "unit": "kg",
+    "1RM": {
+      "squat": 200,
+      "bench-press": 137.5,
+      "deadlift": 237.5
+    }
+  }
+}
