@@ -5,6 +5,9 @@ from requests import Response
 url = "https://raw.githubusercontent.com/melvio/python3-examples/main/data/mock_data.json"
 response: Response = requests.get(url=url)
 
+print(response.text)
+# nicely formatted response body
+
 print(response.status_code)
 # 200
 
