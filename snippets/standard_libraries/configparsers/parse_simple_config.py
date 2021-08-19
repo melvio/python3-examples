@@ -4,7 +4,7 @@
 from pathlib import Path
 from configparser import ConfigParser
 
-config_file = Path("../../data/config_file.conf").resolve()
+config_file = Path("../../../data/config_file.conf").resolve()
 assert config_file.exists(), "File does not exists"
 
 configparser = ConfigParser()
