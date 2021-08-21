@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
+from typing import Tuple
+
 import click
 
 
 @click.command()
 @click.argument('postfixes', nargs=-1)  # narg=number of args
 @click.argument('base', nargs=1)
-def append_cli(postfixes, base):
+def append_cli(postfixes: Tuple[str], base):
     print(*[base + postfix for postfix in postfixes])
 
 
