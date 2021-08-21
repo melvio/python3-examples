@@ -26,17 +26,15 @@ def cli():
     pass
 
 
-@click.command()
+@cli.command()
 def now():
     click.echo(datetime.datetime.now())
 
 
-@click.command()
+@cli.command()
 def today():
     click.echo(datetime.date.today())
 
 
 if __name__ == '__main__':
-    cli.add_command(now)
-    cli.add_command(today)
     cli()
