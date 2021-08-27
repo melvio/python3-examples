@@ -3,11 +3,7 @@
 
 class Doctor:
     def __init__(self, specialty):
-        self._specialty = specialty
-
-    @property
-    def specialty(self):
-        return self._specialty
+        self.specialty = specialty
 
     def __str__(self):
         return self.__class__.__name__ + "(" + f"specialty={self.specialty}" + ")"
