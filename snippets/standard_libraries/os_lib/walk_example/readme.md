@@ -1,0 +1,1 @@
+This directory contains a small selection of medical drugs.
