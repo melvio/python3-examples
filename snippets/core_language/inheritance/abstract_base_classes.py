@@ -40,8 +40,11 @@ if __name__ == "__main__":
     internist = Internist()
     print(internist)  # Internist(specialty=internist)
     print(internist.is_surgical())  # False
+    print(internist.get_relevant_dutch_knmg_url())  # https://www.knmg.nl/opleiding-herregistratie...
 
     oncologist = Oncologist()
     print(oncologist)  # Oncologist(specialty=internist)
     print(oncologist.is_surgical())  # False
+    print(oncologist.get_relevant_dutch_knmg_url())  # https://www.knmg.nl/opleiding-herregistratie...
+
     print(oncologist.sub_specialty)  # Oncologist
