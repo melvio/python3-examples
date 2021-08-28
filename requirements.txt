@@ -1,3 +1,5 @@
 requests
 click
 glom
+jq
+plumbum
