@@ -2,9 +2,10 @@
 import click
 from pathlib import Path
 
+
 @click.command()
 def cli():
-    click.edit(filename=Path.home() / ".bashrc")
+    click.edit(filename=f"{Path.home()}/.bashrc")
 
 
 if __name__ == '__main__':

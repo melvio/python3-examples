@@ -14,6 +14,5 @@ def user(username):
     click.echo("hi " f"{username}")
 
 
-
 if __name__ == '__main__':
     cli()
