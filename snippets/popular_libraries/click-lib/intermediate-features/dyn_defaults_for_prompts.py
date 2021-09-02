@@ -7,6 +7,7 @@ def cli():
     """group cmd"""
 
 
+
 @cli.command()
 @click.option("--username", "-u", prompt=True, show_default="$USER",
               default=lambda: os.environ.get("USER", "BASH_VERSION"))
