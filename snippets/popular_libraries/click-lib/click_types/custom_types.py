@@ -12,6 +12,7 @@ class EnhancedDate(click.DateTime):
 
     def __init__(self, formats: Optional[Sequence[str]] = None):
         super().__init__(formats)
+        self.formats += ["today", "tomorrow"]  # works out well here
 
     def convert(self, value: Any, param: Optional["Parameter"], ctx: Optional["Context"]) -> Any:
         if value == "today":
