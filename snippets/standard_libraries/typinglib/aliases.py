@@ -3,8 +3,9 @@
 from typing import List
 
 Doses = List[float]
-# Doses = list[float] # python 3.9
 
+
+# Doses = list[float] # python 3.9
 
 
 def increase_dose(increase_factor: float, doses: Doses) -> Doses:
