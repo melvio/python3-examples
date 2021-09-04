@@ -19,8 +19,8 @@ print(my_cmd.short_help)  # my_short help
 print(my_cmd.name)  # other_name
 
 group_cmd()
-# ./click_cmd_with_help.py --huwh
-# Usage: click_cmd_with_help.py [OPTIONS] COMMAND [ARGS]...
+# ./different_help_flags.py --huwh
+# Usage: different_help_flags.py [OPTIONS] COMMAND [ARGS]...
 
 # Options:
 # -h, --help, --huwh  Show this message and exit.
