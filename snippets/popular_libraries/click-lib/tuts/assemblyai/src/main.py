@@ -36,13 +36,20 @@ def get_key(ctx, key):
     click.echo(ctx.obj[key])
 
 
+@cli.command()
+@click.pass_context
+def get_quest_key(ctx: click.Context):
+    ctx.invoke(get_key, key="quest.key")
+
+
 def main():
     cli()
 
 
 # ./main.py ./hopla.json check_context_object
-# ./main.py  ./hopla.json get-keys
-# ./main.py  ./hopla.json get-key quest.progress.hp
+# ./main.py ./hopla.json get-keys
+# ./main.py ./hopla.json get-key quest.progress.hp
+# ./main.py ./hopla.json get-quest-key
 
 if __name__ == '__main__':
     main()
