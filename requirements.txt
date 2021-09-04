@@ -3,3 +3,6 @@ click
 glom
 jq
 plumbum
+pytest
+pytest-cov
+numpy
