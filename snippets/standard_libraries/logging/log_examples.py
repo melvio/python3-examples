@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import logging
 
+
 def setup_logging() -> logging.Logger:
     logging.basicConfig(
         # [DEBUG][hopla.py] 2021-08-19T18:28:13 - Something here
