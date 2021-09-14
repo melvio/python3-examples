@@ -28,11 +28,12 @@ def mocked_requests_get(mock_url: str):
 
 
 @mock.patch("requests.get", side_effect=mocked_requests_get)
-def test_get_github_data(mock_get):
+def test_get_github_data(mock_get: mock.MagicMock):
     """patch mock with a function annotation"""
     result = get_github_data()
     assert result == {"test_text"}
     assert len(mock_get.call_args_list) == CALL_TIMES
+    mock_get.assert_called()
 
 
 def test_get_github_data2():
