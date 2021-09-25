@@ -9,5 +9,15 @@ step2_build_packages:
 	python3 -m build
 
 
-step3_uplaod_to_testpypi:
+step3_upload_to_testpypi:
 	twine upload --repository testpypi dist/*
+
+
+# installing the pushed package
+step4_install_package:
+	python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps example-pkg-YOUR-melvio
+
+# run the code from the installed package
+step5_run_python:
+	python3 -c 'from example_package import example ; example.medical_knowledge()'
+
