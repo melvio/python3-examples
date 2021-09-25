@@ -14,8 +14,11 @@ def medical_knowledge():
         # source <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1570491/>
         # quote: Rene Theophile Hyacinthe Laennec (1781–1826) was a French physician who, in 1816, invented the stethoscope
     else:
-        print(
-            "A disease is considered rare in the EU when fewer than 1 in 2000 people are affected by it."
-        )
+        print("A disease is considered rare in the EU when fewer "
+              "than 1 in 2000 people are affected by it.")
         # source <https://rarediseases.info.nih.gov/diseases/pages/31/faqs-about-rare-diseases>
         # quote: In the European Union, a disease is defined as rare when it affects fewer than 1 in 2,000 people.
+
+
+if __name__ == "__main__":
+    medical_knowledge()
