@@ -31,5 +31,6 @@ def test_are_you_sure_user_declined():
     assert result.exit_code == 1
     assert result.stdout.endswith("Want to try again?\n")
 
+
 if __name__ == "__main__":
     are_you_sure()
